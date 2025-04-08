@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link  rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - web player: music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png">
+                        <a href="#">your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">it's easy will help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box" id="box-2">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="navicons" style="background-color: #121212;">
+                    <img src="./assets/backward_icon.png" style="background-color: #121212;">
+                    <img src="./assets/forward_icon.png" class="hide" style="background-color: #121212;">
+                </div>
+                    <div class="navsticky" style="background-color: #121212;">
+                        <button class="badge hide">Explore premium</button>
+                        <button class="badge"  id="button2">
+                        <i class="fa-regular fa-circle-down"></i>
+                            Install App
+                        </button>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            <div class="cards">
+                <h2 style="background-color: #121212;">Recently played</h2>
+                <div class="cards-container"  style="background-color: #121212;">
+                    <div class="card">
+                        <img src="./assets/card1img.png" class="card-img">
+                        <p class="card-title">Tere Vaste (Fro...</p>
+                        <p class="card-info">Varun jain, Sachin-Jigar, Amitab Bhattacharya</p>
+                    </div>
+                </div> 
+                
+                <h2 style="background-color: #121212;">Trending Now near you</h2>
+                <div class="cards-container" style="background-color: #121212;">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 GLobal</p>
+                        <p class="card-info">Your daily update of the most played tracks right...</p>
+                    </div>                
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 GLobal</p>
+                        <p class="card-info">Your daily update of the most played tracks right...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 GLobal</p>
+                        <p class="card-info">Your daily update of the most played tracks right...</p>
+                    </div>
+                </div>
+
+                <h2 style="background-color: #121212;">Popular Albums</h2>
+                <div class="cards-container" style="background-color: #121212;">
+                    <div class="card">
+                        <img src="./assets/card12.png" class="card-img">
+                        <p class="card-title">Kabir Singh</p>
+                        <p class="card-info">Various Artist</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./assets/card11.png" class="card-img">
+                        <p class="card-title">Still Rollin</p>
+                        <p class="card-info">Shubh</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card13.png" class="card-img">
+                        <p class="card-title">Champagne Talk</p>
+                        <p class="card-info">King</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card14.png" class="card-img">
+                        <p class="card-title">Ye jawaani he dew...</p>
+                        <p class="card-info">Pritam</p>
+                    </div>
+                </div>
+
+                <h2 style="background-color: #121212;">Featured charts</h2>
+                <div class="cards-container" style="background-color: #121212;">
+                    <div class="card">
+                        <img src="./assets/card7.png" class="card-img">
+                        <p class="card-title">Arjit Singh Radio</p>
+                        <p class="card-info">By Spotify</p>
+                    </div> 
+                    <div class="card">
+                        <img src="./assets/card8.png" class="card-img">
+                        <p class="card-title">Sindu Mosse wala...</p>
+                        <p class="card-info">By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card9.png" class="card-img">
+                        <p class="card-title">KK-Radio</p>
+                        <p class="card-info">By Spotify</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card10.png" class="card-img">
+                        <p class="card-title">Pritam radio</p>
+                        <p class="card-info">By Spotify</p>
+                    </div>
+                </div>
+
+                <div class="footer1">
+                    <div style="background-color: #121212;">
+                        <p id="foot" style="background-color: #121212;"><b style="background-color: #121212;">Company</b></p>
+                        <p id="foot" style="background-color: #121212;">About</p>
+                        <p id="foot" style="background-color: #121212;">Jobs</p>
+                        <p id="foot" style="background-color: #121212;">For the Record</p>
+                    </div>
+                    <div style="padding-left: 8rem; background-color: #121212;" >
+                        <p id="foot" style="background-color: #121212;"><b style="background-color: #121212;">Communities</b></p>
+                        <p id="foot" style="background-color: #121212;">For Artists</p>
+                        <p id="foot" style="background-color: #121212;">Devlopers</p>
+                        <p id="foot" style="background-color: #121212;">Advertising</p>
+                        <p id="foot" style="background-color: #121212;">Investors</p>
+                        <p id="foot" style="background-color: #121212;">Vendors</p>
+                    </div>
+                    <div class="logo">
+                        <div style="background-color: #121212;"><img src="./assets/instagram.png" style="height: 30px; width: 30px; padding: 0.5rem;"></div>
+                        <div style="background-color: #121212;"><img src="./assets/twitter.png" style="height: 30px; width: 30px; padding: 0.5rem;"></div>
+                        <div style="background-color: #121212;"><img src="./assets/facebook.png" style="height: 30px; width: 30px; padding: 0.5rem;"></div>
+                    </div>
+                </div>
+
+                <div class="footer">
+
+                    <div class="line" style="background-color: #121212;">
+                        <div class="left" style="background-color: #121212;">
+                            <p id="foot" style="background-color: #121212;" >Legal</p>
+                            <p id="foot" style="background-color: #121212;" >Privicy Center</p>
+                            <p id="foot" style="background-color: #121212;" >Privicy Policy</p>
+                            <p id="foot" style="background-color: #121212;" >Cookies</p>
+                            <p id="foot" style="background-color: #121212;" >About Ads</p>
+                            <p id="foot" style="background-color: #121212;" >Accessebility</p>
+                            
+                        </div>
+                        <div class="right" style="background-color: #121212;">
+                            <p id="foot" style="background-color: #121212; padding-left: 6rem;">2023 Spotify AB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./assets/card1img.png" id="downimg">
+                <div>
+                    <p style="padding-top: 25px;"><b>Tere Vaaste (From "zara hatke z...</b></p>
+                    <p style="font-size: 14px; padding-top: 5px;">varun jain, sachin zigar, shahabad...</p>
+                </div>
+                <i class="fa-regular fa-heart" style="padding: 6px; padding-top: 32px; opacity: 0.7;"></i>
+                <img src="./assets/pip.png" id="pip">
+            </div>
+            <div class="control">
+                <div class="player-control">
+                    <img src="./assets/player_icon1.png" class="player-control-icon">
+                    <img src="./assets/player_icon2.png" class="player-control-icon">
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1;  height: 2rem; width: 2rem">
+                    <img src="./assets/player_icon4.png" class="player-control-icon">
+                    <img src="./assets/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" min=0 max=100 class="progress-bar" style="width: 25rem;">
+                    <span>4:00</span>
+                </div>
+            </div>
+            <div class="player">
+                <img src="./assets/last.png" class="last">
+                <input type="range" min=0 max=100 class="progress-bar" id="last">
+            </div>           
+        </div>
+    </div>
+</body>
+</html>
